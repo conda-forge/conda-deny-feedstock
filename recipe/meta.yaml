@@ -1,5 +1,5 @@
 {% set name = "conda-deny" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/quantco/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ea654c9f8ca8c190eb0d53c5f1efb19da73ac4e67716f2b4232dae6c749a5011
+  sha256: 4b98a2a0edaf5eebd4257ed0f0c34357ca66e8076717b68c4eba2fdbd39e4f1f
 build:
   number: 0
 
