@@ -9,4 +9,4 @@ cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
 
 export OPENSSL_DIR=$PREFIX
 
-cargo install --no-track --locked --root "$PREFIX" --path .
+cargo auditable install --no-track --locked --root "$PREFIX" --path .
