@@ -32,7 +32,7 @@ tests:
       - conda-deny --help
 
 about:
-  - "summary: \"\\ud83d\\udd0e\\ud83d\\udc0d A CLI tool to check your project's dependencies for license compliance\""
+  summary: 🔎🐍 A CLI tool to check your project's dependencies for license compliance\""
   license: BSD-3-Clause
   license_file:
     - LICENSE
