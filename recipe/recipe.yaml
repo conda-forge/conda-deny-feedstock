@@ -1,0 +1,45 @@
+schema_version: 1
+
+context:
+  name: conda-deny
+  version: 0.5.1
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/quantco/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 4b98a2a0edaf5eebd4257ed0f0c34357ca66e8076717b68c4eba2fdbd39e4f1f
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - ${{ compiler('rust') }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+    - cargo-bundle-licenses
+    - cargo-auditable
+    - pkg-config
+  host:
+    - if: unix
+      then: openssl
+
+tests:
+  - script:
+      - conda-deny --help
+
+about:
+  summary: 🔎🐍 A CLI tool to check your project's dependencies for license compliance\""
+  license: BSD-3-Clause
+  license_file:
+    - LICENSE
+    - THIRDPARTY.yml
+  homepage: https://github.com/quantco/conda-deny
+
+extra:
+  recipe-maintainers:
+    - pavelzw
+    - PaulKMueller
