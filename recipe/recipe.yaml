@@ -13,7 +13,7 @@ source:
   sha256: 91f49a91cada1c0fab5ae3b6576c5d269b02dd9b62e79a1bf0e5250523dc4b8e
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -38,6 +38,7 @@ about:
     - LICENSE
     - THIRDPARTY.yml
   homepage: https://github.com/quantco/conda-deny
+  repository: https://github.com/quantco/conda-deny
 
 extra:
   recipe-maintainers:
