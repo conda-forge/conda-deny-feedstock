@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: conda-deny
-  version: "0.5.4"
+  version: "0.5.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/quantco/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: ee382067a667855a245170d3093921264f354ad47cb90c6e792ae935b03a099e
+  sha256: 8957e0873e04861d32ef0fea5294a047f1298af62d1f5265a74060683cb20cef
 
 build:
   number: 0
