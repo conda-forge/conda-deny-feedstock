@@ -7,7 +7,7 @@ Home: https://github.com/quantco/conda-deny
 
 Package license: BSD-3-Clause
 
-Summary: 🔎🐍 A CLI tool to check your project's dependencies for license compliance\""
+Summary: 🔎🐍 A CLI tool to check your project's dependencies for license compliance
 
 Development: https://github.com/quantco/conda-deny
 
@@ -194,7 +194,4 @@ Feedstock Maintainers
 
 * [@PaulKMueller](https://github.com/PaulKMueller/)
 * [@pavelzw](https://github.com/pavelzw/)
-
-
-<!-- dummy commit to enable rerendering -->
 
