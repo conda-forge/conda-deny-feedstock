@@ -13,7 +13,7 @@ source:
   sha256: b109175025e444b82efb119d599a93609a3f0e17026d936383ed25d5f2679a82
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -22,7 +22,7 @@ requirements:
     - ${{ stdlib('c') }}
     - cargo-bundle-licenses
     - cargo-auditable
-    - pkg-config
+    - pkgconf
   host:
     - if: unix
       then: openssl
